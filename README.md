@@ -16,13 +16,13 @@ This SPA front-end application is written using only one dependency, namely [Rea
 
 ## Requirements
 
-Install a recent version of [yarn](https://yarnpkg.com/).
+Install a recent version of [bun](https://bun.sh/).
 
 ## Run in development
 
 ```sh
-yarn
-yarn dev
+bun
+bun dev
 ```
 
 Navigate to [http://localhost:5173](http://localhost:5173).
@@ -32,8 +32,8 @@ Example search: http://localhost:5173/?prefix=104.154.0.0%2F15&validate-bgp=true
 ## Build for production
 
 ```sh
-yarn
-yarn build
+bun
+bun build
 ```
 
 Note that small [images are inlined](https://vitejs.dev/guide/assets) in scripts
@@ -46,7 +46,7 @@ the `--assetsDir` option, see [the build oprtions](https://vitejs.dev/guide/cli.
 To change the path prefix, specify the `--base` option during a build, e.g.:
 
 ```sh
-yarn build --base /static
+bun build --base /static
 ```
 
 In that case assets will be included from `/static/assets/*`,
@@ -56,19 +56,19 @@ See [the documentation on base](https://vitejs.dev/config/shared-options.html#ba
 ## Linting
 
 ```sh
-yarn lint
+bun lint
 ```
 
 ## Formatting
 
 ```sh
-yarn format
+bun format
 ```
 
 ## Unit tests
 
 ```sh
-yarn test
+bun test
 ```
 
 ## Resources
@@ -83,7 +83,7 @@ By specifying `ROTO_API_HOST` and/or `ROUTINATOR_API_HOST` as environment variab
 these can be configured at build time. For example:
 
 ```sh
-ROTO_API_HOST=https://rest.bgp-api.net ROUTINATOR_API_HOST=https://routinator.nlnetlabs.nl yarn build
+ROTO_API_HOST=https://rest.bgp-api.net ROUTINATOR_API_HOST=https://routinator.nlnetlabs.nl bun build
 ```
 
 ## Endpoint documentation

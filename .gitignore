@@ -24,3 +24,5 @@ public
 *.sw?
 /test-results/
 .tgops.toml
+
+CLAUDE.md
